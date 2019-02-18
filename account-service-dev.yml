@@ -11,3 +11,11 @@ management:
     web:
       exposure:
         include: beans,mappings
+        
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongoadmin:secret@localhost:27016/character?authSource=admin
+  cloud:
+    config:
+overrideSystemProperties: false
