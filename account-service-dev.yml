@@ -18,4 +18,4 @@ spring:
       uri: mongodb://mongoadmin:secret@localhost:27013/character?authSource=admin
   cloud:
     config:
-overrideSystemProperties: false
+      overrideSystemProperties: false
