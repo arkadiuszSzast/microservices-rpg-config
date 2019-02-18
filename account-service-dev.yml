@@ -15,7 +15,7 @@ management:
 spring:
   data:
     mongodb:
-      uri: mongodb://mongoadmin:secret@localhost:27013/character?authSource=admin
+      uri: mongodb://mongoadmin:secret@localhost:27013/account?authSource=admin
   cloud:
     config:
       overrideSystemProperties: false
