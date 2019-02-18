@@ -10,8 +10,8 @@ zuul:
       service-id: character-service
       path: /character
 ribbon:
-  ConnectTimeout: 6000
-  ReadTimeout: 6000
+  ConnectTimeout: 8000
+  ReadTimeout: 8000
 security:
   oauth2:
     resource:
