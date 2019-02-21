@@ -6,6 +6,9 @@ zuul:
     account:
       service-id: account-service
       path: /account-service/account
+    account-swagger:
+      service-id: account-service
+      path: /account-service/swagger-ui.html
     character:
       service-id: character-service
       path: /character
