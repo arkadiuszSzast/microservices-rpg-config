@@ -5,10 +5,7 @@ zuul:
   routes:
     account:
       service-id: account-service
-      path: /account-service/account
-    account-swagger:
-      service-id: account-service
-      path: /account-service/swagger-ui.html
+      path: /account-service/**
     character:
       service-id: character-service
       path: /character
