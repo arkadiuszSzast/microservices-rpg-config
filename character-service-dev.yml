@@ -1,5 +1,7 @@
 server:
   port: 0
+  servlet:
+    context-path: /character-service
 security:
   oauth2:
     resource:
