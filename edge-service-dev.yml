@@ -3,9 +3,18 @@ server:
 zuul:
   sensitive-headers: Cookie,Set-Cookie
   routes:
+    account-swagger:
+      service-id: account-service
+      path: /account-service/v2/api-docs
+    character-swagger:
+      service-id: account-service
+      path: /character-service/v2/api-docs
     character:
       service-id: character-service
-      path: /character
+      path: /character-service/character
+    account:
+      service-id: account-service
+      path: /account-service/account
 ribbon:
   ConnectTimeout: 8000
   ReadTimeout: 8000
