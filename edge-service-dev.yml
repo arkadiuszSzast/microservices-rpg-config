@@ -3,9 +3,6 @@ server:
 zuul:
   sensitive-headers: Cookie,Set-Cookie
   routes:
-    account:
-      service-id: account-service
-      path: /account-service/**
     character:
       service-id: character-service
       path: /character
