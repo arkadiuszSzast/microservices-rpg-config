@@ -1,5 +1,8 @@
 server:
   port: 0
+  servlet:
+    context-path: /account-service
+    
 security:
   oauth2:
     resource:
@@ -19,3 +22,4 @@ spring:
   cloud:
     config:
       overrideSystemProperties: false
+   
