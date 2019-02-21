@@ -7,7 +7,7 @@ zuul:
       service-id: account-service
       path: /account-service/v2/api-docs
     character-swagger:
-      service-id: account-service
+      service-id: character-service
       path: /character-service/v2/api-docs
     character:
       service-id: character-service
