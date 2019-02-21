@@ -5,7 +5,7 @@ zuul:
   routes:
     account:
       service-id: account-service
-      path: /account
+      path: /account-service/account
     character:
       service-id: character-service
       path: /character
