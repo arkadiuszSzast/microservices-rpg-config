@@ -22,3 +22,7 @@ spring:
   cloud:
     config:
       overrideSystemProperties: false
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL}
