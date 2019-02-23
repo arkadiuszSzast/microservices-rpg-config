@@ -1,0 +1,24 @@
+server:
+  port: 0
+  servlet:
+    context-path: /account-service
+    
+security:
+  oauth2:
+    resource:
+      user-info-uri: https://dev-826281.oktapreview.com/oauth2/default/v1/userinfo
+      prefer-token-info: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: beans,mappings
+        
+spring:
+  data:
+    mongodb:
+      uri: ${DATABASE_URI}
+  cloud:
+    config:
+      overrideSystemProperties: false
