@@ -1,1 +1,40 @@
 
+server:
+  port: 8081
+zuul:
+  sensitive-headers: Cookie,Set-Cookie
+  routes:
+    account-swagger:
+      service-id: account-service
+      path: /account-service/v2/api-docs
+    character-swagger:
+      service-id: character-service
+      path: /character-service/v2/api-docs
+    character:
+      service-id: character-service
+      path: /character-service/character
+    account:
+      service-id: account-service
+      path: /account-service/account
+ribbon:
+  ConnectTimeout: 8000
+  ReadTimeout: 8000
+security:
+  oauth2:
+    resource:
+      user-info-uri: https://dev-826281.oktapreview.com/oauth2/default/v1/userinfo
+    client:
+      client-id: 0oaj8lccdv5KFZwnZ0h7
+      client-secret: HRFcdTgo2JJvueNwBqzkkSAKfT4WL41IPWF_Mfv7
+      access-token-uri: https://dev-826281.oktapreview.com/oauth2/default/v1/token
+      user-authorization-uri: https://dev-826281.oktapreview.com/oauth2/default/v1/authorize
+      scope: openid profile email
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  shareSecurityContext: true
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL}
