@@ -24,7 +24,7 @@ spring:
       overrideSystemProperties: false
 eureka:
   instance:
-    hostname: account-service
+    hostname: {APP_HOSTNAME}
   client:
     service-url:
       defaultZone: ${EUREKA_URL}
