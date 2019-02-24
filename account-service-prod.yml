@@ -29,4 +29,4 @@ eureka:
     service-url:
       defaultZone: ${EUREKA_URL}
 logging:
-  path: classpath:file: ./src/main/resources/logback.xml
+  path: file:./src/main/resources/logback.xml
