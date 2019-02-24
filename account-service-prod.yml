@@ -28,3 +28,5 @@ eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_URL}
+logging:
+  path: logback.xml
