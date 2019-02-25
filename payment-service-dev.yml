@@ -18,7 +18,7 @@ hystrix:
 spring:
   data:
     mongodb:
-      uri: mongodb://mongoadmin:secret@localhost:27016/payment?authSource=admin
+      uri: mongodb://mongoadmin:secret@localhost:27012/payment?authSource=admin
   cloud:
     config:
       overrideSystemProperties: false
