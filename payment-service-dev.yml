@@ -1,1 +1,24 @@
 
+server:
+  port: 0
+  servlet:
+    context-path: /payment-service
+security:
+  oauth2:
+    resource:
+      user-info-uri: https://dev-826281.oktapreview.com/oauth2/default/v1/userinfo
+      prefer-token-info: false
+
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  shareSecurityContext: true
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://mongoadmin:secret@localhost:27016/payment?authSource=admin
+  cloud:
+    config:
+      overrideSystemProperties: false
