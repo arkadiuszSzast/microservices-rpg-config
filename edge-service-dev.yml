@@ -18,6 +18,9 @@ zuul:
     account:
       service-id: account-service
       path: /account-service/account
+    payment-charge:
+      service-id: payment-service
+      path: /payment-service/payment/charge
 ribbon:
   ConnectTimeout: 8000
   ReadTimeout: 8000
