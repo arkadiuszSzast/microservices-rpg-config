@@ -31,4 +31,4 @@ eureka:
       
 stripe:
   api:
-    key: *
+    key: ${STRIPE_API_KEY}
