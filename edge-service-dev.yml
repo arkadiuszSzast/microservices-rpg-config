@@ -9,6 +9,9 @@ zuul:
     character-swagger:
       service-id: character-service
       path: /character-service/v2/api-docs
+    payment-swagger:
+      service-id: payment-service
+      path: /payment-service/v2/api-docs
     character:
       service-id: character-service
       path: /character-service/character
