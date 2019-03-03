@@ -1,7 +1,5 @@
 server:
   port: 8081
-zuul:
-  sensitive-headers: Cookie,Set-Cookie
   routes:
     account-swagger:
       service-id: account-service
