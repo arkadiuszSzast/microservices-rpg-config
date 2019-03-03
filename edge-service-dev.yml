@@ -1,5 +1,7 @@
 server:
   port: 8081
+zuul:
+  sensitive-headers: 
   routes:
     account-swagger:
       service-id: account-service
